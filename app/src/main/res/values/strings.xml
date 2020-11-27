@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Firestore</string>
+    <string name="latitude_longitude"><![CDATA[Latitude & Longitude]]></string>
+    <string name="title_activity_maps">Map</string>
+</resources>
