@@ -30,24 +30,8 @@ public class OwnerLogin extends AppCompatActivity {
     }
 
     public void ownerSignup(View view) {
-        ownernam = ownername.getText().toString();
-        ownerpassword = ownerpass.getText().toString();
-        mAuth.createUserWithEmailAndPassword(ownernam, ownerpassword)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            startActivity(new Intent(getApplicationContext(),MainActivity.class));
+        startActivity(new Intent(this,OwnerSignUp.class));
 
-
-                        } else {
-                            // If sign in fails, display a message to the user.
-                            Toast.makeText(getApplicationContext(),"Please Enter Valid Username /n to create new Account click Sign UP",Toast.LENGTH_LONG).show();
-                        }
-
-                        // ...
-                    }
-                });
 
     }
 
